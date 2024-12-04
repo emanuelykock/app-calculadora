@@ -10,15 +10,16 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const String titulo = 'Calculadora';
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Calculadora',
+      title: 'titulo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
             seedColor: const Color.fromARGB(255, 244, 9, 165)),
         useMaterial3: true,
       ),
-      home: const HomePage(title: 'Calculadora'),
+      home: const HomePage(title: 'titulo'),
     );
   }
 }
